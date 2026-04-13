@@ -1,0 +1,10 @@
+name: email-validator-ai-mcp
+description: "MEOK AI Labs — Email validation and verification tools powered by MEOK AI Labs."
+vendor: MEOK AI Labs
+homepage: https://meok.ai
+repository: https://github.com/CSOAI-ORG/email-validator-ai-mcp
+license: MIT
+categories: [Utilities, Validation]
+tags: [email-validation, email-verification, mx-check, disposable-email]
+runtime: python
+entrypoint: server.py
