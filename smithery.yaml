@@ -1,10 +1,28 @@
 name: email-validator-ai-mcp
-description: "MEOK AI Labs — Email validation and verification tools powered by MEOK AI Labs."
-vendor: MEOK AI Labs
-homepage: https://meok.ai
-repository: https://github.com/CSOAI-ORG/email-validator-ai-mcp
-license: MIT
-categories: [Utilities, Validation]
-tags: [email-validation, email-verification, mx-check, disposable-email]
-runtime: python
-entrypoint: server.py
+description: Email validation, MX checking, disposable detection, and typo correction.
+version: 1.0.0
+tools:
+- name: validate_email
+  description: Validate an email address format, structure, and common issues.
+  parameters:
+  - name: email
+    type: string
+    required: true
+- name: check_mx
+  description: Check if a domain has valid MX (mail exchange) records.
+  parameters:
+  - name: domain
+    type: string
+    required: true
+- name: detect_disposable
+  description: Detect if an email uses a disposable/temporary email service.
+  parameters:
+  - name: email
+    type: string
+    required: true
+- name: suggest_correction
+  description: Suggest corrections for common email typos (e.g., gmial.com -> gmail.com).
+  parameters:
+  - name: email
+    type: string
+    required: true

@@ -3,6 +3,11 @@ Email Validator AI MCP Server
 Email validation and verification tools powered by MEOK AI Labs.
 """
 
+
+import sys, os
+sys.path.insert(0, os.path.expanduser('~/clawd/meok-labs-engine/shared'))
+from auth_middleware import check_access
+
 import re
 import time
 import socket
@@ -43,12 +48,16 @@ def _check_rate_limit(tool_name: str) -> None:
 
 
 @mcp.tool()
-def validate_email(email: str) -> dict:
+def validate_email(email: str, api_key: str = "") -> dict:
     """Validate an email address format, structure, and common issues.
 
     Args:
         email: The email address to validate
     """
+    allowed, msg, tier = check_access(api_key)
+    if not allowed:
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+
     _check_rate_limit("validate_email")
     email = email.strip().lower()
     issues = []
@@ -76,12 +85,16 @@ def validate_email(email: str) -> dict:
 
 
 @mcp.tool()
-def check_mx(domain: str) -> dict:
+def check_mx(domain: str, api_key: str = "") -> dict:
     """Check if a domain has valid MX (mail exchange) records.
 
     Args:
         domain: The domain to check MX records for
     """
+    allowed, msg, tier = check_access(api_key)
+    if not allowed:
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+
     _check_rate_limit("check_mx")
     domain = domain.strip().lower().lstrip('@')
     try:
@@ -101,12 +114,16 @@ def check_mx(domain: str) -> dict:
 
 
 @mcp.tool()
-def detect_disposable(email: str) -> dict:
+def detect_disposable(email: str, api_key: str = "") -> dict:
     """Detect if an email uses a disposable/temporary email service.
 
     Args:
         email: The email address to check
     """
+    allowed, msg, tier = check_access(api_key)
+    if not allowed:
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+
     _check_rate_limit("detect_disposable")
     email = email.strip().lower()
     if '@' not in email:
@@ -119,12 +136,16 @@ def detect_disposable(email: str) -> dict:
 
 
 @mcp.tool()
-def suggest_correction(email: str) -> dict:
+def suggest_correction(email: str, api_key: str = "") -> dict:
     """Suggest corrections for common email typos (e.g., gmial.com -> gmail.com).
 
     Args:
         email: The email address to check for typos
     """
+    allowed, msg, tier = check_access(api_key)
+    if not allowed:
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+
     _check_rate_limit("suggest_correction")
     email = email.strip().lower()
     if '@' not in email:

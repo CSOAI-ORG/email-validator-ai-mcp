@@ -8,7 +8,7 @@ description = "MEOK AI Labs — email-validator-ai-mcp"
 license = {file = "LICENSE"}
 requires-python = ">=3.10"
 authors = [{name = "MEOK AI Labs", email = "nicholas@meok.ai"}]
-dependencies = ["mcp>=1.0.0"]
+dependencies = ["mcp>=1.0.0", "dnspython>=2.3.0", ]
 [project.urls]
 Homepage = "https://meok.ai"
 [tool.hatch.build.targets.wheel]

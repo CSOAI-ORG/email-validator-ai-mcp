@@ -1,23 +1,67 @@
 {
   "name": "email-validator-ai-mcp",
-  "description": "MEOK AI Labs \u2014 Email validation and verification tools powered by MEOK AI Labs.",
-  "vendor": "MEOK AI Labs",
-  "homepage": "https://meok.ai",
-  "repository": "https://github.com/CSOAI-ORG/email-validator-ai-mcp",
-  "runtime": "python",
-  "entrypoint": "server.py",
+  "description": "Email validation, MX checking, disposable detection, and typo correction.",
+  "version": "1.0.0",
   "tools": [
-    "validate_email",
-    "check_mx",
-    "detect_disposable",
-    "suggest_correction"
-  ],
-  "categories": [
-    "Utilities",
-    "Validation"
-  ],
-  "pricing": {
-    "free": "50 calls/day",
-    "pro": "$9/mo"
-  }
+    {
+      "name": "validate_email",
+      "description": "Validate an email address format, structure, and common issues.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "email"
+        ]
+      }
+    },
+    {
+      "name": "check_mx",
+      "description": "Check if a domain has valid MX (mail exchange) records.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "domain": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "domain"
+        ]
+      }
+    },
+    {
+      "name": "detect_disposable",
+      "description": "Detect if an email uses a disposable/temporary email service.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "email"
+        ]
+      }
+    },
+    {
+      "name": "suggest_correction",
+      "description": "Suggest corrections for common email typos (e.g., gmial.com -> gmail.com).",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "email"
+        ]
+      }
+    }
+  ]
 }
