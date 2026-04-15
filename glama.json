@@ -1,0 +1,10 @@
+{
+  "name": "email-validator-ai-mcp",
+  "description": "MEOK AI Labs \u2014 email-validator-ai-mcp",
+  "vendor": "MEOK AI Labs",
+  "homepage": "https://meok.ai",
+  "repository": "https://github.com/CSOAI-ORG/email-validator-ai-mcp",
+  "license": "MIT",
+  "runtime": "python",
+  "entryPoint": "mcp-wrapper.py"
+}
