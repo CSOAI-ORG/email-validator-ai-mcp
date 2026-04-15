@@ -1,0 +1,53 @@
+{
+  "name": "email-validator-ai",
+  "description": "Email Validator Ai tools powered by MEOK AI Labs.",
+  "version": "1.0.0",
+  "protocol_version": "2025-11-25",
+  "publisher": {
+    "name": "MEOK AI Labs",
+    "url": "https://meok.ai",
+    "email": "nicholas@meok.ai"
+  },
+  "repository": "https://github.com/CSOAI-ORG/email-validator-ai-mcp",
+  "license": "MIT",
+  "transport": [
+    "stdio",
+    "streamable-http"
+  ],
+  "authentication": {
+    "type": "api-key",
+    "free_tier": true,
+    "free_limit": "15 calls/day"
+  },
+  "tools": [
+    {
+      "name": "validate_email",
+      "description": "Validate an email address format, structure, and common issues."
+    },
+    {
+      "name": "check_mx",
+      "description": "Check if a domain has valid MX (mail exchange) records."
+    },
+    {
+      "name": "detect_disposable",
+      "description": "Detect if an email uses a disposable/temporary email service."
+    },
+    {
+      "name": "suggest_correction",
+      "description": "Suggest corrections for common email typos (e.g., gmial.com -> gmail.com)."
+    }
+  ],
+  "categories": [
+    "AI & Machine Learning",
+    "Marketing & SEO"
+  ],
+  "pricing": {
+    "free": {
+      "calls_per_day": 15
+    },
+    "pro": {
+      "price": "$29/month",
+      "url": "https://meok.ai/pricing"
+    }
+  }
+}
