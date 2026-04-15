@@ -1,7 +1,7 @@
 {
   "name": "email-validator-ai-mcp",
   "version": "1.0.0",
-  "description": "MEOK AI Labs \u2014 email validator MCP Server",
+  "description": "MCP server for email validator ai. Features validate email, check mx, detect disposable. From MEOK AI Labs.",
   "main": "server.py",
   "mcp": {
     "name": "email validator",

@@ -1,5 +1,6 @@
 name: email-validator-ai-mcp
-description: MEOK AI Labs MCP Server
+description: MCP server for email validator ai. Features validate email, check mx,
+  detect disposable. From MEOK AI Labs.
 version: 1.0.0
 tools:
 - name: validate_email
