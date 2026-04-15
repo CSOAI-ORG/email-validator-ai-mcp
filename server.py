@@ -14,7 +14,7 @@ import socket
 from collections import defaultdict
 from mcp.server.fastmcp import FastMCP
 
-mcp = FastMCP("email-validator-ai-mcp")
+mcp = FastMCP("email-validator-ai", instructions="MEOK AI Labs MCP Server")
 
 _call_counts: dict[str, list[float]] = defaultdict(list)
 FREE_TIER_LIMIT = 50

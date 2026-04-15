@@ -1,5 +1,5 @@
 name: email-validator-ai-mcp
-description: Email validation, MX checking, disposable detection, and typo correction.
+description: MEOK AI Labs MCP Server
 version: 1.0.0
 tools:
 - name: validate_email

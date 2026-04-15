@@ -1,6 +1,6 @@
 {
   "name": "email-validator-ai-mcp",
-  "description": "Email validation, MX checking, disposable detection, and typo correction.",
+  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 Sovereign AI tools for everyone.",
   "version": "1.0.0",
   "tools": [
     {
