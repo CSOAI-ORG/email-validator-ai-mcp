@@ -1,24 +1,33 @@
 # Email Validator AI MCP Server
 
-Email validation, MX checking, disposable detection, and typo correction.
+> By [MEOK AI Labs](https://meok.ai) — Email validation, disposable domain detection, and typo correction
 
-## Tools
-
-- **validate_email**
-- **check_mx**
-- **detect_disposable**
-- **suggest_correction**
-
-## Quick Start
+## Installation
 
 ```bash
-pip install mcp
+pip install email-validator-ai-mcp
+```
+
+## Usage
+
+```bash
 python server.py
 ```
 
-## Rate Limits
+## Tools
 
-- Free tier: 50 calls/day per tool
-- Upgrade: https://meok.ai/pricing
+This server provides comprehensive email validation including:
 
-Built by [MEOK AI Labs](https://meok.ai)
+- RFC 5322 email format validation
+- Disposable/temporary email domain detection (20+ providers)
+- Common domain typo detection and correction (Gmail, Hotmail, Yahoo, Outlook)
+- MX record checking
+- Bulk email validation
+
+## Authentication
+
+Free tier: 50 calls/day. Upgrade at [meok.ai/pricing](https://meok.ai/pricing) for unlimited access.
+
+## License
+
+MIT — MEOK AI Labs
