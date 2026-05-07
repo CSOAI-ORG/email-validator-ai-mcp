@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 [project]
 name = "email-validator-ai-mcp"
-version = "1.0.3"
+version = "1.0.4"
 readme = "README.md"
 description = "MCP server for email validator ai. Features validate email, check mx, detect disposable. From MEOK AI Labs."
 license = {file = "LICENSE"}
