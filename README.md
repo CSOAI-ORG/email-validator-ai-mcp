@@ -1,3 +1,5 @@
+[![email-validator-ai-mcp MCP server](https://glama.ai/mcp/servers/CSOAI-ORG/email-validator-ai-mcp/badges/card.svg)](https://glama.ai/mcp/servers/CSOAI-ORG/email-validator-ai-mcp)
+
 <div align="center">
 
 [![GitHub stars](https://img.shields.io/github/stars/CSOAI-ORG/email-validator-ai-mcp)](https://github.com/CSOAI-ORG/email-validator-ai-mcp/stargazers)
