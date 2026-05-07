@@ -1,3 +1,7 @@
+[![email-validator-ai-mcp MCP server](https://glama.ai/mcp/servers/CSOAI-ORG/email-validator-ai-mcp/badges/score.svg)](https://glama.ai/mcp/servers/CSOAI-ORG/email-validator-ai-mcp)
+[![MCP Registry](https://img.shields.io/badge/MCP_Registry-Published-green)](https://registry.modelcontextprotocol.io)
+[![PyPI](https://img.shields.io/pypi/v/email-validator-ai-mcp)](https://pypi.org/project/email-validator-ai-mcp/)
+
 [![email-validator-ai-mcp MCP server](https://glama.ai/mcp/servers/CSOAI-ORG/email-validator-ai-mcp/badges/card.svg)](https://glama.ai/mcp/servers/CSOAI-ORG/email-validator-ai-mcp)
 
 <div align="center">
