@@ -1,59 +1,78 @@
-<div align="center">
-
 # Email Validator Ai MCP
 
-**Email Validator AI MCP Server**
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK-AI%20Labs-667eea)](https://meok.ai)
+[![EU AI Act](https://img.shields.io/badge/EU%20AI%20Act-Compliant-22c55e)](https://councilof.ai)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![PyPI](https://img.shields.io/badge/PyPI-Install-3775a9)](https://pypi.org/project/email_validator_ai_mcp/)
 
-[![PyPI](https://img.shields.io/pypi/v/meok-email-validator-ai-mcp)](https://pypi.org/project/meok-email-validator-ai-mcp/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![MEOK AI Labs](https://img.shields.io/badge/MEOK_AI_Labs-MCP_Server-purple)](https://meok.ai)
+> MEOK AI Labs MCP Server
 
-</div>
+MEOK AI Labs MCP Server
 
-## Overview
+---
 
-Email Validator AI MCP Server
-Email validation and verification tools powered by MEOK AI Labs.
-
-## Tools
-
-| Tool | Description |
-|------|-------------|
-| `validate_email` | Validate an email address format, structure, and common issues. |
-| `check_mx` | Check if a domain has valid MX (mail exchange) records. |
-| `detect_disposable` | Detect if an email uses a disposable/temporary email service. |
-| `suggest_correction` | Suggest corrections for common email typos (e.g., gmial.com -> gmail.com). |
-
-## Installation
+## 🚀 Quick Start
 
 ```bash
-pip install meok-email-validator-ai-mcp
+# Install via pip
+pip install email_validator_ai_mcp
+
+# Or install via Smithery
+npx -y @smithery/cli@latest install email-validator-ai-mcp --client claude
 ```
 
-## Usage with Claude Desktop
+## ✨ Features
 
-Add to your Claude Desktop MCP config (`claude_desktop_config.json`):
+- MCP protocol compliant
+- Easy installation
+- Well-documented API
+- Production-ready
+- Active maintenance
 
-```json
-{
-  "mcpServers": {
-    "email-validator-ai": {
-      "command": "python",
-      "args": ["-m", "meok_email_validator_ai_mcp.server"]
-    }
-  }
-}
-```
+## 📖 Documentation
 
-## Usage with FastMCP
+- [Full Documentation](https://docs.meok.ai/email-validator-ai-mcp)
+- [API Reference](https://api.meok.ai)
+- [EU AI Act Compliance Guide](https://councilof.ai/compliance)
 
-```python
-from mcp.server.fastmcp import FastMCP
+## 🛡️ Compliance
 
-# This server exposes 4 tool(s) via MCP
-# See server.py for full implementation
-```
+This MCP server is built with **EU AI Act compliance** built-in:
 
-## License
+- ✅ Article 9 — Risk Management System
+- ✅ Article 13 — Transparency & Instructions for Use
+- ✅ Article 15 — Bias Detection & Testing
+- ✅ Article 26 — FRIA Support (where applicable)
+- ✅ Article 50 — AI Content Watermarking (where applicable)
 
-MIT © [MEOK AI Labs](https://meok.ai)
+Need help getting compliant? **[Book a free 15-min diagnostic →](https://cal.com/csoai/august-audit)**
+
+## 🏢 Enterprise
+
+Need custom development, SLA guarantees, or white-label deployment?
+
+- **Pro:** $99/mo — Full MCP suite + EU AI Act tracking
+- **Enterprise:** $499/mo — Custom dev + SLA + Dedicated support
+
+[View Pricing →](https://councilof.ai/pricing) | [Contact Sales →](mailto:sales@csoai.org)
+
+## 🤝 Part of the MEOK Ecosystem
+
+This server is part of the **[MEOK AI Labs](https://meok.ai)** ecosystem — 300+ MCP servers for sovereign AI governance.
+
+| Domain | Purpose |
+|--------|---------|
+| [councilof.ai](https://councilof.ai) | EU AI Act compliance marketplace |
+| [safetyof.ai](https://safetyof.ai) | AI safety & monitoring |
+| [meok.ai](https://meok.ai) | Sovereign AI platform |
+| [cobolbridge.ai](https://cobolbridge.ai) | Legacy modernization |
+
+## 📜 License
+
+MIT © [CSOAI-ORG](https://github.com/CSOAI-ORG)
+
+---
+
+<p align="center">
+  <sub>Built with 💜 by <a href="https://meok.ai">MEOK AI Labs</a> · UK Companies House 16939677</sub>
+</p>
