@@ -1,0 +1,33 @@
+# email-validator-ai-mcp
+# **Email Validator AI MCP Server**
+
+## Install
+```bash
+pip install email-validator-ai-mcp
+```
+
+## Auth & Rate Limits
+- Free tier: 10 calls/day. No API key required.
+- Pro tier (£79/mo): unlimited + signed attestations.
+- Enterprise (£1,499/mo): white-label.
+
+## Tools
+
+### `validate_email`
+Validate an email address format, structure, and common issues.
+
+### `check_mx`
+Check if a domain has valid MX (mail exchange) records.
+
+### `detect_disposable`
+Detect if an email uses a disposable/temporary email service.
+
+### `suggest_correction`
+Suggest corrections for common email typos (e.g., gmial.com -> gmail.com).
+
+
+## Maintainer
+MEOK AI Labs · hello@meok.ai · https://meok.ai · MIT licensed
+
+## Pairs with
+Governance moat: pair this tool with any of MEOK's 38 governance MCPs (EU AI Act, DORA, NIS2, CRA, GDPR, ISO 42001, etc.) for full compliance coverage.

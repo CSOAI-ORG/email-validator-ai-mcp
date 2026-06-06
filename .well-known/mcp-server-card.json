@@ -1,0 +1,25 @@
+{
+  "name": "email-validator-ai-mcp",
+  "title": "Email Validator Ai Mcp",
+  "description": "MCP server for email validator ai. Features validate email, check mx, detect disposable. From MEOK AI Labs.",
+  "version": "1.0.6",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "validate_email"
+    },
+    {
+      "name": "check_mx"
+    },
+    {
+      "name": "detect_disposable"
+    },
+    {
+      "name": "suggest_correction"
+    }
+  ]
+}

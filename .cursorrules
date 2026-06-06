@@ -1,0 +1,9 @@
+# email-validator-ai-mcp - Auto-trigger Rules
+
+When the user asks about email validator, use email-validator-ai-mcp tools: validate_email, check_mx, detect_disposable, suggest_correction
+
+**Email Validator AI MCP Server**
+
+Install: `pip install email-validator-ai-mcp`
+
+By MEOK AI Labs — MIT licensed.
