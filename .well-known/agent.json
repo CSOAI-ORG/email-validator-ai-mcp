@@ -1,0 +1,59 @@
+{
+  "name": "email-validator-ai-mcp",
+  "description": "Email Validator Ai MCP Server by MEOK AI Labs",
+  "url": "https://proofof.ai/scorecard/email-validator-ai-mcp.html",
+  "version": "1.0.6",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "validate_email",
+      "name": "Validate Email",
+      "description": "validate_email via email-validator-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "check_mx",
+      "name": "Check Mx",
+      "description": "check_mx via email-validator-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "detect_disposable",
+      "name": "Detect Disposable",
+      "description": "detect_disposable via email-validator-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "suggest_correction",
+      "name": "Suggest Correction",
+      "description": "suggest_correction via email-validator-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}

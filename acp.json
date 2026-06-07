@@ -1,0 +1,22 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "email-validator-ai-mcp",
+    "description": "Email Validator Ai MCP Server by MEOK AI Labs",
+    "version": "1.0.6",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "email-validator-ai-mcp"
+      }
+    ],
+    "capabilities": [
+      "validate_email",
+      "check_mx",
+      "detect_disposable",
+      "suggest_correction"
+    ]
+  }
+}
