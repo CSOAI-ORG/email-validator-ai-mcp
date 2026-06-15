@@ -1,4 +1,4 @@
-<!-- mcp-name: CSOAI-ORG/email-validator-ai-mcp -->
+<!-- mcp-name: io.github.CSOAI-ORG/email-validator-ai-mcp -->
 [![MCP Scorecard: 86/100](https://img.shields.io/badge/proofof.ai-86%2F100-5b21b6)](https://proofof.ai/scorecard/email-validator-ai-mcp.html)
 
 # Email Validator Ai MCP
@@ -138,3 +138,8 @@ Once configured, ask your assistant, for example:
 - "Use `validate_email` to …"
 - "Use `check_mx` to …"
 - "Use `detect_disposable` to …"
+
+## See also
+
+MEOK compliance MCP fleet:
+[`email-automation-mcp`](https://github.com/CSOAI-ORG/email-automation-mcp)
